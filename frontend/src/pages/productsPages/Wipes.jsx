@@ -1,5 +1,4 @@
 import React from 'react';
-import './productsPagesStyles.css';
 
 
 const wipesData = [

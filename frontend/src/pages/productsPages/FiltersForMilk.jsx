@@ -1,5 +1,4 @@
 import React from 'react';
-import './productsPagesStyles.css';
 
 const filterData = [
   { size: '50 x 50', pack160: '100 шт. полиэтилен', pack80: '', method: '', equipment: 'Прибор ОЧМ-М' },
