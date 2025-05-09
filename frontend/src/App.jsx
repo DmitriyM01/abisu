@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import ScrollToTop from './utils/ScrollToTop.jsx';
@@ -86,7 +86,11 @@ function App() {
 
           {routesData.map(({ path, componentName }) => {
             const Component = lazy(() => import(`./pages/productsPages/${componentName}.jsx`));
-            return <Route key={path} path={path} element={<Component />} />;
+            return (
+              <Suspense fallback={<div>Загрузка страницы...</div>}>
+                <Route key={path} path={path} element={<Component />} />
+              </Suspense>
+            );
           })};
         </Routes>
         <Footer />
