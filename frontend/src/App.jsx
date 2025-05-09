@@ -77,6 +77,7 @@ function App() {
       <ScrollToTop />
       <div className="container">
         <Header />
+        <Suspense fallback={<div>Загрузка страницы...</div>}>
         <Routes>
           <Route path='/' element={<Body />} />
           <Route path='/products' element={<Products />} />
@@ -87,15 +88,16 @@ function App() {
           {routesData.map(({ path, componentName }) => {
             const Component = lazy(() => import(`./pages/productsPages/${componentName}.jsx`));
             return (
-              <Suspense fallback={<div>Загрузка страницы...</div>}>
-                <Route key={path} path={path} element={<Component />} />
-              </Suspense>
+              // <Suspense fallback={<div>Загрузка страницы...</div>}>
+              <Route key={path} path={path} element={<Component />} />
+              /* </Suspense> */
             );
           })};
         </Routes>
-        <Footer />
-      </div>
-    </Router>
+      </Suspense>
+      <Footer />
+    </div>
+    </Router >
   );
 }
 
