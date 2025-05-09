@@ -1,0 +1,56 @@
+/* Элементы для фильтрации молока */
+.elementy-dlya-filtraxii-moloka-description {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .elementy-dlya-filtraxii-moloka-description > img {
+    width: 25%;
+    margin-right: 20px;
+  }
+  
+  .elementy-dlya-filtraxii-moloka-description .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+  /*tables styles */
+  table {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  
+  th {
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  td {
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+/* description-wrapper */
+.description-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.description-wrapper > img {
+    margin-right: 20px;
+    width: 20%;
+    height: auto;
+}
+
+.description-wrapper > .description > p {
+    margin: 0;
+}
