@@ -55,6 +55,7 @@ body {
 
 .nav .link-products {
   padding: 15px 20px;
+  margin: 15px;
   background-color: #77c977;
   color: rgb(0, 0, 0);
   border: none;

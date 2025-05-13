@@ -18,9 +18,12 @@ function Header() {
       <text className='company-name'>ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ "ЭБИСУ"</text>
       <nav className="nav">
         <ul>
-            <NavLink to="/products" className='link-products'>
-              Продукция
-            </NavLink>
+          <NavLink to="/products" className='link-products'>
+            Продукция
+          </NavLink>
+          <NavLink to="/about" className='link-products'>
+            О компании
+          </NavLink>
         </ul>
       </nav>
     </header>
