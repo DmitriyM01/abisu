@@ -26,7 +26,6 @@ const Footer = () => {
                         </a></li>
                         <li><a href="tel:+74952291037">+7 (495) 229-10-37</a></li>
                         <li><a href="mailto:info@abisu.ru">info@abisu.ru</a></li>
-                        <li><a href="#">Нормативные акты</a></li>
                         <li><Link to="/vocabulary">Краткий зоотехнический словарь</Link></li>
 
                     </ul>
